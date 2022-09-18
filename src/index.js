@@ -28,7 +28,7 @@ function getCountry(e) {
         Notify.info(
           'Too many matches found. Please enter a more specific name.'
         );
-      } else if (data.length >= 2) {
+      } else if (data.length >= 2 && data.length <= 10) {
         getCardList(data);
       } else {
         getCard(data);
